@@ -1,10 +1,10 @@
 package ru.netology.service;
-
-import junit.framework.TestCase;
 import org.junit.Test;
 import org.junit.Assert;
 
-public class CashbackHackServiceTest extends TestCase {
+import static org.junit.Assert.assertEquals;
+
+public class CashbackHackServiceTest {
     CashbackHackService service = new CashbackHackService();
 
     @Test
