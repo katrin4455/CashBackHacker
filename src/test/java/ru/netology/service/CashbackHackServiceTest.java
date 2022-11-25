@@ -1,6 +1,10 @@
 package ru.netology.service;
-import org.junit.Test;
-import static org.junit.Assert.*;
+//import org.junit.Test;
+//import static org.junit.Assert.*;
+ import org.testng.annotations.Test;
+ import org.testng.Assert;
+
+ import static org.testng.Assert.assertEquals;
 
 public class CashbackHackServiceTest {
 
@@ -12,7 +16,7 @@ public class CashbackHackServiceTest {
         int expected = 1000;
         int actual = service.remain(amount);
 
-        assertEquals(expected,actual);
+        assertEquals(actual, expected);
 
     }
 
@@ -22,7 +26,7 @@ public class CashbackHackServiceTest {
         int expected = 500;
         int actual = service.remain(amount);
 
-        assertEquals(expected,actual);
+        assertEquals(actual, expected);
    }
    @Test
     public void boundaryOver() {
@@ -30,6 +34,6 @@ public class CashbackHackServiceTest {
        int expected = 1000;
        int actual = service.remain(amount);
 
-       assertEquals(expected,actual);
+       assertEquals(actual, expected);
    }
 }
